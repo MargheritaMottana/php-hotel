@@ -95,7 +95,8 @@
                             <?php echo $hotel['description'] ?>
                         </td>
                         <td>
-                            <?php echo $hotel['parking'] ?>
+                            <!-- condizione per stampare sì o no in base alla booleana -->
+                            <?php echo ($hotel['parking'] ? 'Yes' : 'No') ?>
                         </td>
                         <td>
                             <?php echo $hotel['vote'] ?>
